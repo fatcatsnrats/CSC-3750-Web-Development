@@ -1,0 +1,109 @@
+html { 	
+    box-sizing: border-box; 
+}
+body {
+    background-color: #faf2e4;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+main {
+    font-family: 'Stint Ultra Expanded', cursive;
+    background-color: white;
+    line-height: 1.8em;
+    padding: 1em;
+    margin: 2.5%;
+    border: double 4px #EADDC4;
+    border-radius: 25px;
+    color: #555;
+}
+main img {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+img[src*="kayak"] {   
+    -webkit-shape-outside: ellipse(250px 180px at 50% 50%);   
+    shape-outside: ellipse(250px 180px at 50% 50%);    
+  } 
+aside {
+    background: url(images/scallop.png) repeat-y left top;
+    background-color: #FFEFD3;
+    border-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 1em;
+    padding-left: 45px;
+    margin-left: 8em;
+}
+aside h3 {
+    border-top: 1px solid;   
+    border-left: 3px solid;     
+    padding-left: 1em;
+}
+footer {
+    text-align: center;
+    font-size: .8em;
+}
+h1 {
+    text-align: center;
+    font-family: serif;
+    font-weight: normal;
+    text-transform: uppercase;     
+    padding-left: 1em;
+    color: #d1633c;
+    border-bottom: 1px solid #57b1dc;
+    margin-top: 30px;
+    font-size: 2.5em;
+    font-family: "Marko One", Georgia, serif;
+}
+h2 {
+    color: #d1633c;
+    font-size: 1.5em;
+}
+h3 {  
+    padding-left: 1em;
+    margin-top: 2.5em;
+    color: #d1633c;
+    font-size: 1em;
+}
+a {
+    text-decoration: none;
+    color: #57b1dc;
+    border-bottom: 1px dotted;
+    padding-bottom: .2em;
+}
+a:hover {
+    color: #c700f2;
+    background-color: #fff;
+}
+a:visited {
+    color: #937393;
+}
+a:active {
+    color: #ff00ff;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+nav {
+    text-align: center;
+    margin: 0;
+}
+strong {
+    font-style: italic;
+}
+small {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+small b {
+    color: #d1633c;
+}
+.Intro {
+    font-family: Georgia, serif;
+    font-size: 1.2em;
+    margin-top: -0.8em;
+}
+.What-to-Bring {
+    font-family: Georgia, serif;
+    font-style: italic;
+}

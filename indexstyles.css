@@ -1,0 +1,57 @@
+header {
+    background-color: #d2dc9d;
+    background: 
+        url(images/purpledot.png) left top repeat-y,
+        url(images/purpledot.png) right top repeat-y,
+        url(images/gooseshadow.png) 90% bottom no-repeat;
+    background-color: rgba(255,255,255,0.5);
+}
+body {
+    background-color: #faf2e4;
+    background-image: url(images/blackgoose.png);
+    background-repeat: no-repeat;
+    background-position: center 100px;
+    margin: 0 10%;
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+    font-family: serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid #57b1dc;
+    margin-top: 30px;
+    color: #57b1dc;
+}
+h2 {
+    color: #d1633c;
+    font-size: 1em;
+}
+a {
+    text-decoration: none;
+    color: #57b1dc;
+}
+a:hover {
+    color: #c700f2;
+    background-color: #fff;
+}
+a:visited {
+    color: #937393;
+}
+a:active {
+    color: #ff00ff;
+}
+source {
+    align-content: center;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul {
+    list-style-type: none;
+}
+nav {
+    text-align: center;
+}
