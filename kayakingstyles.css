@@ -26,7 +26,7 @@ img[src*="kayak"] {
   } 
 aside {
     background: url(images/scallop.png) repeat-y left top;
-    background-color: #FFEFD3;
+    background-color: #EAFEFF;
     border-radius: 25px;
     border-top-right-radius: 25px;
     padding: 1em;
