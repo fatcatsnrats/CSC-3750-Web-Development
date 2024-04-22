@@ -53,10 +53,6 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-/*
-nav {
-    text-align: center;
-} */
 
 nav ul {
     margin: 0;
@@ -72,6 +68,80 @@ nav ul li a {
     border-radius: .5em; 	
     padding: .5em 1em; 	
     margin: .5em; 
+}
+
+/* body {
+    background-color: #faf2e4;
+    margin: 0 10%;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #d1633c;
+    text-align: center;
+    font-family: serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    border-bottom: 1px solid #57b1dc;
+    margin-top: 30px;
+    font-size: 3em;
+} */
+
+/* input[type="text"], input[type="tel"], input[type="email"] {
+    margin-bottom: 10px;
+} */
+
+#lists {
+    margin-left: 0.4em;
+}
+
+#buttons {
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #57b1dc;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #d1633c;
+}
+
+textarea {
+    margin-top: 5px;
+}
+
+p {
+    text-align: center;
+}
+
+#parentFieldset {
+    border: 1px solid #57b1dc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+fieldset {
+    border: 1px solid #57b1dc;
+    padding: 10px;
+    margin: 10px 5px;
+}
+
+legend {
+    color: #d1633c;
+    font-size: 1.25em;
+}
+
+ol, ul { 
+    list-style-type: none;
 }
 
 small {

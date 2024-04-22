@@ -2,41 +2,28 @@
 <html>
     <head>
         <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="videostyles.css">
         <title>Camping Trip Video</title>
-        <style type="text/css">
-            /* Styling for the webpage */
-            body {
-                background-color: #faf2e4;
-                margin: 0 10%;
-                font-family: sans-serif;
-            }
-            /* Styles the header that contains the title */
-            h1 {
-                color: #d1633c;
-                text-align: center;
-                font-family: serif;
-                font-weight: normal;
-                text-transform: uppercase;
-                border-bottom: 1px solid #57b1dc;
-                margin-top: 30px;
-            }
-            /* Styles the paragraph that contains the video description */
-            p {
-                text-align: center;
-            }
-            /* Styles the video */
-            video {
-                display: block;
-                margin: 0 auto;
-            }
-        </style>
     </head>
 
     <body>
-        <!-- Header with the title of the webpage along with
-        a description of the video -->
-        <h1>Camping Trip Video</h1>
-        <p>Watch this video to learn the basics of camping!</p>
+        <header>
+            <h1><img src="images/nature.jpeg" alt="logo" width="123"
+                height="140">Introduction to Camping</h1>
+            <!-- Navigation bar -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="kayaking.html">Kayaking</a></li>
+                    <li><a href="video.html">Camping Basics Video</a></li>
+                    <li><a href="form.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
 
         <!-- Video element with controls and autoplay that also leads
         the user to the video on YouTube if the video fails to display -->
@@ -48,5 +35,13 @@
             <a href="https://www.youtube.com/watch?v=xUqTgNJgWUs">
                 Camping Basics
             </a>
+        </video>
+        <p>Watch this video to learn the basics of camping!</p>
     </body>
+
+    <footer>
+        <small><em><p>All content copyright &copy 2024, Omar Almasri</p></em></small>
+        <small><em><p>Site last updated 4/23/2024.</p></em></small>
+        <small><em><p><a href="mailto:OmarAlmasri100@Gmail.com">OmarAlmasri100@Gmail.com</p></em></small>
+    </footer>
 </html>

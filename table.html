@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8" content="width=device-width">
-    <title>Camping Trip</title>
-    <style>
-    body {
-    background-color: #faf2e4;
-    margin: 0 10%;
-    font-family: sans-serif;
-    }
-    h1 {
-    text-align: center;
-    font-family: serif;
-    font-weight: normal;
-    text-transform: uppercase;
-    border-bottom: 1px solid #57b1dc;
-    margin-top: 30px;
-    }
-    h2 {
-    color: #d1633c;
-    font-size: 1em;
-    }
-    td, th { border: 1px solid #CCC; }
-    table { border: 1px solid black; }
-    </style>
-</head>
-<body>
-    <table>
-        <caption>Table 1: A simple table</caption>
-        <tr>
-            <th rowspan="2" scope="col" span="header"></th>
-            <th colspan="2" span="header">A common header for two subheads</th>
-            <th rowspan="2" span="header">Header 3</th>
-        </tr>
-        <tr>
-            <th span="header">Header 1</th>
-            <th span="header">Header 2</th>
-        </tr>
-        <tr>
-            <th scope="row" span="header">Thing A</th>
-            <td span="data">Data A1</td>
-            <td span="data">Data A2</td>
-            <td span="data">Data A3</td>
-        </tr>
-        <tr>
-            <th scope="row" span="header">Thing B</th>
-            <td span="data">Data B1</td>
-            <td span="data">Data B2</td>
-            <td span="data">Data B3</td>
-        </tr>
-        <tr>
-            <th scope="row" span="header">Thing C</th>
-            <td span="data">Data C1</td>
-            <td span="data">Data C2</td>
-            <td span="data">Data C3</td>
-    </table>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Camping Trip</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="tablestyles.css">
+    </head>
+    <body>
+        <header>
+            <h1><img src="images/nature.jpeg" alt="logo" width="123"
+                height="140">Schedule</h1>
+            <!-- Navigation bar -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="kayaking.html">Kayaking</a></li>
+                    <li><a href="video.html">Camping Basics Video</a></li>
+                    <li><a href="form.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <table>
+            <caption>Activities</caption>
+            <tr>
+                <th rowspan="2" scope="col" span="header"></th>
+                <!-- <th colspan="3" span="header">Time of Day</th> -->
+            </tr>
+            <tr>
+                <th span="header">Morning</th>
+                <th span="header">Afternoon</th>
+                <th span="header">Evening</th>
+            </tr>
+            <tr>
+                <th scope="row" span="header">Friday</th>
+                <td span="data">Fishing</td>
+                <td span="data">Hiking</td>
+                <td span="data">Bonfire</td>
+            </tr>
+            <tr>
+                <th scope="row" span="header">Saturday</th>
+                <td span="data">Frisbee Golfing</td>
+                <td span="data">Kayaking</td>
+                <td span="data">Bonfire</td>
+            </tr>
+            <tr>
+                <th scope="row" span="header">Sunday</th>
+                <td span="data">Hiking</td>
+                <td span="data">Swimming</td>
+                <td span="data">Bonfire</td>
+        </table>
+    </body>
+
+    <footer>
+        <small><em><p>All content copyright &copy 2024, Omar Almasri</p></em></small>
+        <small><em><p>Site last updated 4/23/2024.</p></em></small>
+        <small><em><p><a href="mailto:OmarAlmasri100@Gmail.com">OmarAlmasri100@Gmail.com</p></em></small>
+    </footer>
+</html>
