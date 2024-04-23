@@ -1,5 +1,10 @@
+html {
+    box-sizing: border-box;
+}
+
 header {
     background-color: rgba(255,255,255,0.5);
+    border-radius: 1em;
 }
 
 body {
@@ -15,15 +20,14 @@ h1 {
     font-family: serif;
     font-weight: normal;
     text-transform: uppercase;
-    border-bottom: 1px solid #57b1dc;
-    margin-top: 30px;
-    color: #57b1dc;
+    border-bottom: 1px solid #d1633c;
+    color: #d1633c;
     font-size: 3em;
 }
 
 h2 {
     color: #d1633c;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 a {
@@ -72,6 +76,34 @@ nav ul li a {
     border-radius: .5em; 	
     padding: .5em 1em; 	
     margin: .5em; 
+}
+
+/* picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+.main-image {
+    max-width: 40%;
+    height: auto;
+    margin-top: 1em;
+}
+
+.container {
+    width: auto;
+    margin-top: 2em;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 1em;
+}
+
+.inner-container {
+    padding: 1em 4em;
+}
+
+.about {
+    text-align: center;
+    padding-top: 2em;
 }
 
 small {

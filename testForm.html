@@ -23,156 +23,145 @@
                 </ul>
             </nav>
         </header>
-        <form class="form-horizontal" id="signupForm">
-            <fieldset id="parentFieldset">
-                <legend style="font-size: 1.75em;">
-                    General Information
-                </legend>
+        <div class="main-container">
+            <form class="form-horizontal" id="signupForm">
+                <fieldset id="parentFieldset">
+                    <legend style="font-size: 1.75em;">
+                        General Information
+                    </legend>
 
-                <fieldset>
-                    <legend>Personal Information</legend>
-                    <div class="form-group">
-                        <div class="col-xs-3">
-                            <label class="control-label" for="name">Name:</label>
-                            <input type="text" class="form-control" id="name" name="name">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-xs-2">
-                            <label class="control-label" for="phone">Phone:</label>
-                            <input type="tel" class="form-control" id="phone" name="phone">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-xs-3">
-                            <label class="control-label" for="email">Email:</label>
-                            <input type="email" class="form-control" id="email" name="email">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-xs-5">
-                            <label class="control-label" for="age">Address:</label>
-                            <input type="text" class="form-control" id="address" name="address">
-                        </div>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Emergency Contact Information</legend>
-                    <div class="form-group">
-                        <div class="col-xs-3">
-                            <label class="control-label" for="emergencyName">Emergency Contact Name:</label>
-                            <input type="text" class="form-control" id="emergencyName" name="emergencyName">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-xs-3">
-                            <label class="control-label" for="emergencyPhone">Emergency Contact Phone:</label>
-                            <input type="tel" class="form-control" id="emergencyPhone" name="emergencyPhone">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-xs-3">
-                            <label class="control-label" for="emergencyEmail">Emergency Contact Email:</label>
-                            <input type="email" class="form-control" id="emergencyEmail" name="emergencyEmail">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-xs-3">
-                            <label class="control-label" for="emergencyRelationship">Emergency Contact Relationship:</label>
-                            <input type="text" class="form-control" id="emergencyRelationship" name="emergencyRelationship">
-                        </div>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Allergies and Medical Information</legend>
-                    <div class="form-group">
-                        <div class="col-xs-5">
-                            <label class="control-label" for="allergies">Allergies:</label>
-                            <input type="textarea" class="form-control" id="allergies" name="FormAllergies">
-                        </div>
-                        <div class="col-xs-5">
-                            <label class="control-label" for="medicalConditions">Medical Conditions:</label>
-                            <input type="textarea" class="form-control" id="medicalConditions" name="FormMedicalConditions">
-                        </div>
-                    </div>
-                </fieldset>
-
-                <fieldset>
-                    <legend>Additional Information</legend>
                     <fieldset>
-                        <legend>People Attending</legend>
-                        <div class="form-group">
-                            <label class="control-label" for="additionalInfo">How many people will be in your group?</label>
-                            <div class="col-xs-1">
-                                <select class="form-control" id="additionalInfo" name="FormAdditionalInfo">
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                    <option value="11">11</option>
-                                    <option value="12">12</option>
-                                </select>
+                        <legend>Personal Information</legend>
+                        <div class="'container">
+                            <div class="col-xs-3" id="medium">
+                                <label class="control-label" for="name">Name:</label>
+                                <input type="text" class="form-control" id="name" name="name">
+                            </div>
+                            <div class="col-xs-3" id="medium">
+                                <label class="control-label" for="phone">Phone:</label>
+                                <input type="tel" class="form-control" id="phone" name="phone">
+                            </div>
+                            <div class="col-xs-3" id="medium">
+                                <label class="control-label" for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="col-xs-5" id="large">
+                                <label class="control-label" for="age">Address:</label>
+                                <input type="text" class="form-control" id="address" name="address">
                             </div>
                         </div>
                     </fieldset>
 
                     <fieldset>
-                        <legend>Arrival Date</legend>
-                        <div class="form-group" id="lists">
-                            <label class="control-label" for="arrivalDate">Day Your Party Plans on Arriving</label>
-                            <div class="radio">
-                                <label><input type="radio" name="arrivalDate" value="Friday" checked>Friday</label>
+                        <legend>Emergency Contact Information</legend>
+                        <div class="'container">
+                            <div class="col-xs-3" id="medium">
+                                <label class="control-label" for="emergencyName">Emergency Contact Name:</label>
+                                <input type="text" class="form-control" id="emergencyName" name="emergencyName">
                             </div>
-                            <div class="radio">
-                                <label><input type="radio" name="arrivalDate" value="Saturday">Saturday</label>
+                            <div class="col-xs-2" id="medium">
+                                <label class="control-label" for="emergencyPhone">Emergency Contact Phone:</label>
+                                <input type="tel" class="form-control" id="emergencyPhone" name="emergencyPhone">
                             </div>
-                            <div class="radio">
-                                <label><input type="radio" name="arrivalDate" value="Sunday">Sunday</label>
+                            <div class="col-xs-3" id="medium">
+                                <label class="control-label" for="emergencyEmail">Emergency Contact Email:</label>
+                                <input type="email" class="form-control" id="emergencyEmail" name="emergencyEmail">
+                            </div>
+                            <div class="col-xs-3" id="medium">
+                                <label class="control-label" for="emergencyRelationship">Emergency Contact Relationship:</label>
+                                <input type="text" class="form-control" id="emergencyRelationship" name="emergencyRelationship">
                             </div>
                         </div>
                     </fieldset>
 
                     <fieldset>
-                        <legend>Activities</legend>
-                        <div class="form-group" id="lists">
-                            <label class="control-label" for="activities">Activities Your Group Plan on Attending</label>
-                            <div class="checkbox">
-                                <label><input type="checkbox" name="activities" value="Hiking">Hiking</label>
+                        <legend>Allergies and Medical Information</legend>
+                        <div class="container">
+                            <div class="col-xs-5">
+                                <label class="control-label" for="allergies">Allergies:</label>
+                                <textarea class="form-control" id="allergies" name="FormAllergies" rows="3"></textarea>
                             </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" name="activities" value="Fishing">Fishing</label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" name="activities" value="Frisbee Golfing">Frisbee Golfing</label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" name="activities" value="Kayaking">Kayaking</label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" name="activities" value="Swimming">Swimming</label>
+                            <div class="col-xs-5">
+                                <label class="control-label" for="medicalConditions">Medical Conditions:</label>
+                                <textarea class="form-control" id="medicalConditions" name="FormMedicalConditions" rows="3"></textarea>
                             </div>
                         </div>
                     </fieldset>
+
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <fieldset>
+                            <legend>People Attending</legend>
+                            <div class="'container">
+                                <label class="control-label" for="additionalInfo">How many people will be in your group?</label>
+                                <div class="col-xs-1" id="xsmall">
+                                    <select class="form-control" id="additionalInfo" name="FormAdditionalInfo">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Arrival Date</legend>
+                            <div class="'container" id="lists">
+                                <label class="control-label" for="arrivalDate">Day Your Party Plans on Arriving</label>
+                                <div class="radio">
+                                    <label><input type="radio" name="arrivalDate" value="Friday" checked>Friday</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="arrivalDate" value="Saturday">Saturday</label>
+                                </div>
+                                <div class="radio">
+                                    <label><input type="radio" name="arrivalDate" value="Sunday">Sunday</label>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Activities</legend>
+                            <div class="'container" id="lists">
+                                <label class="control-label" for="activities">Activities Your Group Plan on Attending</label>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="activities" value="Hiking">Hiking</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="activities" value="Fishing">Fishing</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="activities" value="Frisbee Golfing">Frisbee Golfing</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="activities" value="Kayaking">Kayaking</label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox" name="activities" value="Swimming">Swimming</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </fieldset>
                 </fieldset>
-            </fieldset>
 
-            <br>
-            <p>
-                <input type="reset" value="Start over">
-                <input type="submit" value="Sign me up!" >
-            </p>
-            <br>
+                <br>
+                <p>
+                    <input type="reset" value="Start over">
+                    <input type="submit" value="Sign me up!" >
+                </p>
+                <br>
 
-        </form>
-
+            </form>
+        </div>
         <!-- <script>
             document.getElementById('signupForm').addEventListener('submit', function(event) {
               event.preventDefault();

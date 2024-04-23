@@ -4,6 +4,7 @@ html {
 
 header {
     background-color: rgba(255,255,255,0.5);
+    border-radius: 1em;
 }
 
 body {
@@ -19,9 +20,8 @@ h1 {
     font-family: serif;
     font-weight: normal;
     text-transform: uppercase;
-    border-bottom: 1px solid #57b1dc;
-    margin-top: 30px;
-    color: #57b1dc;
+    border-bottom: 1px solid #d1633c;
+    color: #d1633c;
     font-size: 3em;
 }
 
@@ -76,12 +76,13 @@ nav ul li a {
 
 td, th {
     background-color: rgba(255,255,255,0.5);
-    border: 1px solid #CCC;
+    border: 3px solid #783F27;
     padding: 5px;
     text-align: center;
 }
 
 th {
+    color: #d1633c;
     width: 6em;
 }
 
@@ -90,7 +91,7 @@ td {
 }
 
 table {
-    border: 1px solid black;
+    border: 3px solid #783F27;
     border-collapse: collapse;
     margin: 0 auto;
     width: 50%;
@@ -100,8 +101,17 @@ caption {
     margin-top: 1.5em;
     font-size: 1.5em;
     font-weight: bold;
+    color: #d1633c;
     /* margin-bottom: -0.5em; */
     text-align: center;
+}
+
+.main-container {
+    width: auto;
+    margin-top: 2em;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 1em;
+    padding-bottom: 3em;
 }
 
 small {

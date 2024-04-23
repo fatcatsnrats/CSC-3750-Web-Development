@@ -4,6 +4,7 @@ html {
 
 header {
     background-color: rgba(255,255,255,0.5);
+    border-radius: 1em;
 }
 
 body {
@@ -19,9 +20,8 @@ h1 {
     font-family: serif;
     font-weight: normal;
     text-transform: uppercase;
-    border-bottom: 1px solid #57b1dc;
-    margin-top: 30px;
-    color: #57b1dc;
+    border-bottom: 1px solid #d1633c;
+    color: #d1633c;
     font-size: 3em;
 }
 
@@ -83,6 +83,7 @@ main {
     border: double 4px #EADDC4;
     border-radius: 25px;
     color: #555;
+    margin-top: 2em;
 }
 
 main img {
@@ -171,6 +172,14 @@ small {
 small b {
     color: #d1633c;
 }
+
+.main-container {
+    width: auto;
+    margin-top: 2em;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 1em;
+}
+
 .Intro {
     font-family: Georgia, serif;
     font-size: 1.2em;

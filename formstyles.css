@@ -1,5 +1,6 @@
 header {
     background-color: rgba(255,255,255,0.5);
+    border-radius: 1em;
 }
 
 body {
@@ -15,9 +16,8 @@ h1 {
     font-family: serif;
     font-weight: normal;
     text-transform: uppercase;
-    border-bottom: 1px solid #57b1dc;
-    margin-top: 30px;
-    color: #57b1dc;
+    border-bottom: 1px solid #d1633c;
+    color: #d1633c;
     font-size: 3em;
 }
 
@@ -92,7 +92,7 @@ h1 {
 } */
 
 #lists {
-    margin-left: 0.4em;
+    margin-left: 1.2em;
 }
 
 #buttons {
@@ -125,14 +125,22 @@ p {
 
 #parentFieldset {
     border: 1px solid #57b1dc;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
     margin: 10px 0;
+    margin-top: 2em;
 }
 
 fieldset {
     border: 1px solid #57b1dc;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 10px;
     margin: 10px 5px;
+    margin-bottom: 2em;
 }
 
 legend {
@@ -154,4 +162,35 @@ footer {
     margin-top: 2em;
     text-align: center;
     font-size: .8em;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+}
+
+.main-container {
+    width: auto;
+    margin-top: 2em;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 1em;
+}
+
+.allergies-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+#medium {
+    width: 20em;
+}
+
+#large {
+    width: 30em;
+}
+
+#xsmall {
+    width: 6em;
 }
