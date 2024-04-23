@@ -20,8 +20,8 @@ h1 {
     font-family: serif;
     font-weight: normal;
     text-transform: uppercase;
-    border-bottom: 1px solid #d1633c;
-    color: #d1633c;
+    border-bottom: 1px solid #783F27;
+    color: #783F27;
     font-size: 3em;
 }
 
@@ -67,6 +67,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     list-style-type: none;
 }
@@ -90,6 +91,7 @@ nav ul li a {
     align-items: stretch;
     flex-flow: row wrap;
     justify-content: center;
+    padding: 1em;
 }
 
 section {
@@ -125,6 +127,13 @@ footer {
     background-color: #783F27;
     color: #F9AB33;
     line-height: 4em;
+    text-align: center;
+}
+
+.activity {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .date-and-time {
@@ -141,6 +150,15 @@ footer {
     margin-top: 2em;
     background-color: rgba(255,255,255,0.5);
     border-radius: 1em;
+}
+
+.container {
+    padding: 1em;
+    padding-bottom: 2.5em;
+}
+
+.title {
+    border-bottom: 0px solid #d1633c;
 }
 
 /* @media screen and (min-width: 400px) {

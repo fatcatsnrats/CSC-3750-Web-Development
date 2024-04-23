@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" >
+        <title>Camping Trip Registration</title>
+        <style type="text/css">
+            /* Styling for the form */
+            body {
+                background-color: #faf2e4;
+                margin: 0 10%;
+                font-family: sans-serif;
+            }
+            /* Styling for the header that appears at the top of the page */
+            h1 {
+                color: #d1633c;
+                text-align: center;
+                font-family: serif;
+                font-weight: normal;
+                text-transform: uppercase;
+                border-bottom: 1px solid #57b1dc;
+                margin-top: 30px;
+                font-size: 3em;
+            }
+            /* Styling for the input fields used to collect user information
+            and user emergency contact information */
+            input[type="text"], input[type="tel"], input[type="email"] {
+                margin-bottom: 10px;
+            }
+            /* Styling for the submit and reset buttons */
+            input[type="submit"], input[type="reset"] {
+                background-color: #57b1dc;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 0 10px;
+                font-size: 1em;
+            }
+            /* Changes the color of the submit and reset buttons
+            when hovered over */
+            input[type="submit"]:hover, input[type="reset"]:hover {
+                background-color: #d1633c;
+            }
+            /* Styling for the textarea used to collect allergy and medical
+            information */
+            textarea {
+                margin-top: 5px;
+            }
+            /* Styles the parent fieldsets that contain other fieldsets */
+            #parentFieldset {
+                border: 1px solid #57b1dc;
+                padding: 10px;
+                margin: 10px 0;
+            }
+            /* Styles the child fieldsets */
+            fieldset {
+                border: 1px solid #57b1dc;
+                padding: 10px;
+                margin: 10px 5px;
+            }
+            /* Styles the legend text */
+            legend {
+                color: #d1633c;
+                font-size: 1.25em;
+            }
+            /* Removes the bullet points from the list items */
+            ol, ul { 
+                list-style-type: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Registration form for the camping trip -->
+        <h1>Camping Trip Registration</h1>
+
+        <form action="" method="post">
+            <!-- Collects the users name, address, phone number,
+            email as well as their emergency contact information
+            and any allergies or medical information. -->
+            <fieldset id="parentFieldset">
+                <legend style="font-size: 1.75em;">
+                    General Information
+                </legend>
+                <!-- Collects the users name, address, phone number,
+                and email -->
+                <fieldset>
+                    <legend>Your Information</legend>
+                    <ul>
+                        <li>
+                            <label for="formName">
+                                Name: 
+                            </label>
+                            <input type="text" name="name"
+                                id="formName">
+                        </li>
+                        <li>
+                            <label for="formAddress">
+                                Address: 
+                            </label>
+                            <input type="text" name="address"
+                                id="formAddress">
+                        </li>
+                        <li>
+                            <label for="formTelephone">
+                                Telephone Number: 
+                            </label>
+                            <input type="tel" name="telephone"
+                                id="formTelephone">
+                        </li>
+                        <li>
+                            <label for="formEmail">
+                                Email: 
+                            </label>
+                            <input type="email" name="email"
+                                id="formEmail">
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <!-- Collects the users emergency contact name,
+                phone number, and email -->
+                <fieldset>
+                    <legend>Emergency Contact Information</legend>
+                    <ul>
+                        <li>
+                            <label for="formEmergencyName">
+                                Emergency Contact Name: 
+                            </label>
+                            <input type="text" name="emergencyName"
+                                id="formEmergencyName">
+                        </li>
+                        <li>
+                            <label for="formEmergencyTelephone">
+                                Emergency Contact Telephone Number: 
+                            </label>
+                            <input type="tel" name="emergencyTelephone"
+                                id="formEmergencyTelephone">
+                        </li>
+                        <li>
+                            <label for="formEmergencyEmail">
+                                Emergency Contact Email: 
+                            </label>
+                            <input type="email" name="emergencyEmail"
+                                id="formEmergencyEmail">
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <!-- Collects any allergies or medical information
+                the user may have -->
+                <fieldset>
+                    <legend>Allergies and Medical Information</legend>
+                    <ul>
+                        <li>
+                            <p>
+                                Please enter important medical information 
+                                and list any allergies you or your group have:
+                                <br>
+                                <textarea name="allergies" rows="4" cols="60"
+                                placeholder="No more than 400 characters long."
+                                maxlength="400"></textarea>
+                            </p>
+                        </li>
+                </fieldset>
+
+                <!-- Collects the number of people in the users group -->
+                <fieldset>
+                    <legend>People Attending</legend>
+                    <ul>
+                        <li>
+                            <label for="formPeople">
+                                How many people will be in your group?
+                            </label>
+                            <select name="people" size="1"
+                                id="formPeople">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </li>
+                    </ul>
+                </fieldset>
+            </fieldset>
+
+            <br>
+
+            <!-- Collects the day the user plans on arriving and
+            the activities the user plans on attending -->
+            <fieldset id="parentFieldset">
+                <legend style="font-size: 1.75em;">
+                    Additional Information
+                </legend>
+                <!-- Collects the day the user plans on arriving -->
+                <fieldset>
+                    <legend>Day You Plan on Arriving</legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="radio" name="arrivalDay"
+                                    value="friday" checked>Friday
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="arrivalDay"
+                                    value="saturday">Saturday
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="radio" name="arrivalDay"
+                                    value="sunday">Sunday
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <!-- Collects the activities the user plans on attending -->
+                <fieldset>
+                    <legend>
+                        Activities Your Group Plan on Attending
+                    </legend>
+                    <ul>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="activities[]"
+                                    value="hiking">Hiking
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="activities[]"
+                                    value="fishing">Fishing
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="activities[]"
+                                    value="frisbee">Frisbee Golfing
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="activities[]"
+                                    value="kayaking">Kayaking
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" name="activities[]"
+                                    value="swimming">Swimming
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </fieldset>
+
+            <br>
+            <!-- Submit and reset buttons for the form-->
+            <p style="text-align: center;">
+                <input type="reset" value="Start over">
+                <input type="submit" value="Sign me up!" >
+            </p>
+            <br>
+            
+        </form>
+    </body>
+</html>
