@@ -173,21 +173,21 @@ footer {
     
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
     .column-container {
-        width: 20%;
+        width: 30%;
     }
 
     .middle {
-        width: 30%;
+        width: 5%;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
         justify-content: center;
         padding: 1.5em;
     }
     
     .Intro {
-        display: contents;
+        display: none;
     }
 
     .left, .right {

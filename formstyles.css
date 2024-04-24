@@ -178,6 +178,12 @@ footer {
     flex: auto;
 }
 
+.allergy-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+}
+
 .main-container {
     width: auto;
     margin-top: 2em;
@@ -209,11 +215,19 @@ footer {
     width: 30em;
 }
 
+#xlarge {
+    width: 50em;
+}
+
 #xsmall {
     width: 6em;
 }
 
 @media screen and (min-width: 200px) {
+    .allergy-container {
+        flex-flow: column wrap;
+    }
+
     #medium {
         width: 10em;
     }
@@ -225,8 +239,12 @@ footer {
     #xsmall {
         width: 4em;
     }
+
+    #xlarge {
+        width: 10em;
+    }
     
-}@media screen and (min-width: 400px) {
+}@media screen and (min-width: 470px) {
     #medium {
         width: 15em;
     }
@@ -238,6 +256,10 @@ footer {
     #xsmall {
         width: 4em;
     }
+
+    #xlarge {
+        width: 20em;
+    }
     
 }
 
@@ -247,10 +269,20 @@ footer {
     }
     
     #large {
-        width: 30em;
+        width: 25em;
     }
     
     #xsmall {
         width: 6em;
+    }
+
+    #xlarge {
+        width: 25em;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .allergy-container {
+        flex-flow: row wrap;
     }
 }
